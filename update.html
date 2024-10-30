@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Details</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #6a11cb, #2575fc); /* Beautiful gradient background */
+            color: white; /* Text color for better contrast */
+            font-family: Arial, sans-serif; /* Modern font */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            margin-bottom: 20px; /* Space below the heading */
+            text-align: center; /* Center the heading */
+        }
+        form {
+            background: rgba(0, 0, 0, 0.7); /* Darker semi-transparent background for the form */
+            padding: 30px; /* Increased padding for a spacious feel */
+            border-radius: 10px; /* Rounded corners */
+            width: 400px; /* Set a fixed width for the form */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Softer shadow for depth */
+        }
+        label {
+            margin-bottom: 5px; /* Space below the label */
+            color: #fff; /* White text for labels */
+        }
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        input[type="date"],
+        input[type="password"] {
+            width: 100%; /* Full width of the form */
+            padding: 10px; /* Add padding */
+            margin: 10px 0; /* Space between inputs */
+            border: 1px solid #ccc; /* Light border */
+            border-radius: 5px; /* Rounded corners */
+            transition: border-color 0.3s; /* Transition for border color */
+        }
+        input[type="text"]:focus,
+        input[type="number"]:focus,
+        input[type="email"]:focus,
+        input[type="date"]:focus,
+        input[type="password"]:focus {
+            border-color: #6a11cb; /* Change border color on focus */
+            outline: none; /* Remove default outline */
+        }
+        input[type="submit"] {
+            background-color: #4CAF50; /* Green background */
+            background: linear-gradient(to right, #4CAF50, #45a049); /* Gradient for the button */
+            color: white; /* White text */
+            padding: 10px; /* Add padding */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor */
+            width: 100%; /* Full width of the form */
+            font-size: 16px; /* Font size */
+            transition: background 0.3s; /* Transition for background color */
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Update Details</h1>
+        <form method="POST" action="Update">
+            <label for="uname">UserName:</label>
+            <input type="text" id="uname" name="uname" required>
+            
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="department">Department:</label>
+            <input type="text" id="department" name="department" required>
+            
+            <label for="dob">DOB:</label>
+            <input type="date" id="dob" name="dob" required>
+            
+            <label for="upass">Password:</label>
+            <input type="password" id="upass" name="upass" required>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </center>
+</body>
+</html>
